@@ -1,24 +1,17 @@
-#include "stdio.h"
- #include <unistd.h>
-#include <log4cplus/logger.h>
-#include <log4cplus/loggingmacros.h>
-#include <log4cplus/helpers/loglog.h>
-#include <log4cplus/helpers/stringhelper.h>
-#include <log4cplus/configurator.h>
+#include "log.h"
 
-
-using namespace log4cplus;
 int main(int argc, char* argv[]) 
 {
-	PropertyConfigurator::doConfigure(LOG4CPLUS_TEXT("log.conf"));
-	
-	auto log = Logger::getInstance(LOG4CPLUS_TEXT("DEBUG_LOGGER"));
-	LOG4CPLUS_DEBUG_FMT(log, "start");
+	LogMgr::Obj().init();
 	while(1)
 	{
-	    LOG4CPLUS_DEBUG_FMT(log, "k");
-		sleep(1*60*60);//hour
-		
+		L_FATAL("k");
+		L_ERROR("k");
+		L_WARN("k");
+		L_INFO("k");
+		L_DEBUG("k%s","_abc");
+		L_TRACE("k%d", 5);
+		sleep(1);//hour
 	}
 	return 0;
 }

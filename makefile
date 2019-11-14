@@ -8,7 +8,7 @@ CLOG_LIB = ./lib/libclog.a
 
 	
 #最终目标，执行顺序
-all:  BUILD_CMAKE $(CLOG_LIB)
+ALL:  BUILD_CMAKE $(CLOG_LIB)
 
 	
 BUILD_CMAKE:
@@ -17,7 +17,7 @@ BUILD_CMAKE:
 $(CLOG_LIB) : ./lib/liblog.a ./external/lib/liblog4cplus.a 
 	sh combine_lib.sh
 	
-clean:
+CLEAN:
 	rm -f $(TARGET)
 
 

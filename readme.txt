@@ -1,4 +1,4 @@
-引用开源项目log4cplus，简单包装成自己想用的接口。
+引用开源项目log4cplus，简单包装成简介的使用接口。
 
 编译方法：
 	整个文件夹放到linux目录，安装cmake gcc git等。
@@ -13,4 +13,5 @@ vs浏览代码：
 	samples     ==使用例子
 	
 使用方法：
-	库在lib目录,头文件在include目录
+	用户项目引用库和头文件。 在lib目录和include目录
+	用户项目执行文件必须有配置文件。 log.conf

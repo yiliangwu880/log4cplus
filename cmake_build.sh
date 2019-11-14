@@ -1,4 +1,5 @@
 #!/bin/sh
+echo build cmake
 
 #SVN_VERSION=`svnversion -c |sed 's/^.*://' |sed 's/[A-Z]*$//'`  
 

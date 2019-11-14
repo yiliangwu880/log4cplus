@@ -54,11 +54,4 @@ SET(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
 ADD_SUBDIRECTORY(src)
 ADD_SUBDIRECTORY(samples)
 
-#自定义命令
-##################################
-#ADD_CUSTOM_COMMAND(
-#	 WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-#     COMMENT "cp acc_svr/cfg Debug/bin/ -rf"
-#           )
-#
-##################################
+

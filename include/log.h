@@ -12,7 +12,7 @@ class LogMgr
 private:
 	LogMgr() 
 	{}
-
+	 
 public:
 	static LogMgr &Obj()
 	{

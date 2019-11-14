@@ -24,6 +24,8 @@ Project "log4cplus"
 	files {
 	"../*.txt",
 	"../*.lua",
+	"../*.sh",
+	"../makefile",
 	}
 	
     

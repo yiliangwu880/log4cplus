@@ -1,6 +1,6 @@
 #!/bin/sh
 #合并静态库
-echo build libclog.a 
+echo combine lib
 mkdir -p tmp
 cd tmp
 ar x ../lib/liblog.a
